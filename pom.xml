@@ -87,6 +87,12 @@
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
 			<version>3.1.1</version>
 		</dependency>
+				<!-- Biblioteca da Auth0 para geração e validação de Tokens JWT -->
+		<dependency>
+			<groupId>com.auth0</groupId>
+			<artifactId>java-jwt</artifactId>
+			<version>4.4.0</version>
+		</dependency>
 		</dependencies>
 	<build>
 		<plugins>

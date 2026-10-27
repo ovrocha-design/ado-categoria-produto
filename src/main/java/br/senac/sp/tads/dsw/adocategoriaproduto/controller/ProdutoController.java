@@ -16,8 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
 import br.senac.sp.tads.dsw.adocategoriaproduto.dto.ProdutoRequestDTO;
 import br.senac.sp.tads.dsw.adocategoriaproduto.dto.ProdutoResponseDTO;
 import br.senac.sp.tads.dsw.adocategoriaproduto.service.ProdutoService;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 
+@SecurityRequirement(name = "bearerToken")
 @RestController
 @RequestMapping("/api/produtos")
 public class ProdutoController {
